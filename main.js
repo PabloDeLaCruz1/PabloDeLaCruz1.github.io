@@ -17,7 +17,7 @@ function createPokemon(id) {
 
     ];
 
-    axios.get(`http://fizal.me/pokeapi/api/${id}.json`)
+    axios.get(`http://pokeapi.co/api/v2/pokemon/${id}/`)
         .then(result => {
             let res = result.data;
 
